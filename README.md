@@ -1,8 +1,8 @@
-# Create_LoginPage
+# Ujikom
 This project will give you an exemple of login page using Flask. 
 
 1. First Step 
-copy the current project using : git clone https://github.com/Faouzizi/Create_LoginPage.git
+copy the current project using : git clone https://github.com/rizkydarmadi/ujikom.git
 
 2. Second step
 go to this directory using shell command. 

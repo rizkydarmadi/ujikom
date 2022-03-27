@@ -15,7 +15,7 @@ def index():
 def admin():
     return render_template('halaman_admin.html')
 
-@main.route('/dosen') # profile page that return 'profile'
+@main.route('/dosen',methods=['GET', 'PUT', 'DELETE']) # profile page that return 'profile'
 @login_required
 def dosen():
     dosen = kd_dosen.query.all()
