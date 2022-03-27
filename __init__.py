@@ -27,7 +27,18 @@ def create_app():
     # blueprint allow you to orgnize your flask app
     from auth import auth as auth_blueprint
     app.register_blueprint(auth_blueprint)
-    # blueprint for non-auth parts of app
+    from dosen import dosen as dosen_blueprint
+    app.register_blueprint(dosen_blueprint)
+    from matkul import matkul as matkul_blueprint
+    app.register_blueprint(matkul_blueprint)
+    from mahasiswa import mahasiswa as mahasiswa_blueprint
+    app.register_blueprint(mahasiswa_blueprint)
+    from semester import semester as semester_blueprint
+    app.register_blueprint(semester_blueprint)
+    from jadwal import jadwal as jadwal_blueprint
+    app.register_blueprint(jadwal_blueprint)
+    from krs import krs as krs_blueprint
+    app.register_blueprint(krs_blueprint)
     from main import main as main_blueprint
     app.register_blueprint(main_blueprint)
     return app
